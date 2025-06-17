@@ -2,7 +2,7 @@ from docx.api import Document
 from googletrans import Translator
 
 # Step 1: read the text from the docx file
-document = Document("what the hell sure.docx")
+document = Document("to be translated.docx")
 # extract all text from the doc
 all_text = "\n".join([p.text for p in document.paragraphs])
 print(all_text)
